@@ -1,0 +1,36 @@
+<image class="bg" src="/images/bg.png"></image>
+<!-- 焦点图 -->
+<view class="header-img"  wx:for="{{productList}}" 
+    wx:if="{{item.id===1}}" 
+    wx:key="index" bindtap='onTapProduct'  data-id="{{item.id}}">
+  <view class="header-img__title">
+    <image class="header-img__title__line" src='/images/line-red.png'></image>
+    <view  class="header-img__title__text" >商品1</view>
+    <image class="header-img__title__line" src='/images/line-red.png'></image>
+  </view>
+  <image  
+    class="header-img__product-img" 
+    mode='widthFix'
+    src='{{item.image}}'></image>
+  <image class="header-img__discount-img" 
+    src="/images/discount.png" 
+    mode='widthFix'></image>
+</view>
+<!-- 分隔栏 -->
+<view class="split">
+  <image class="split__line" src='/images/line-black.png'></image>
+  <view  class="split__text" >春季推荐</view>
+  <image class="split__line" src='/images/line-black.png'></image>
+</view>
+<!-- 商品栏 -->
+<view class="product">
+  <view class="product__item" wx:for="{{productList}}" wx:if="{{item.id>1}}" wx:key="index">
+    <image class="product__item__img" src='{{item.image}}'></image>
+    <view class="product__item__name">{{item.name}}</view>
+    <view class="product__item__opt">
+      <view class="product__item__opt__money">￥</view>
+      <view class="product__item__opt__amount">{{item.price}}</view>
+      <view class="product__item__opt__join">+</view>
+    </view>
+  </view>
+</view>

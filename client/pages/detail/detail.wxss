@@ -1,0 +1,114 @@
+/* 背景 */
+page {
+  background: #f9f9f9;
+}
+/* 商品卡片 */
+.product{
+  background: #FFF;
+  margin: 32rpx 52rpx;
+  border-radius: 10rpx;
+  padding: 10rpx 32rpx 70rpx;
+  position: relative;
+}
+.product__name{
+  font-size: 32rpx;
+  font-weight: bolder;
+  line-height: 45rpx;
+}
+.product__place{
+  font-size:26rpx;
+  line-height: 39rpx;
+  color:#888;
+}
+.product__price{
+  position: absolute;
+  bottom: 22rpx;
+  right: 32rpx;
+  font-size:26rpx;
+  line-height: 40rpx;
+}
+.ico--money{
+  display: inline-block;
+  font-size: 24rpx;
+  width: 32rpx;
+  height: 32rpx;
+  line-height: 32rpx;
+  text-align: center;
+  background: #F5E069;
+  border-radius: 50%;
+}
+.product__img{
+  width: 500rpx;
+  height: 500rpx;
+}
+/* 服务与评价 */
+.comment{
+  background: #FFF;
+  margin: 22rpx 52rpx;
+  border-radius: 10rpx;
+  padding: 30rpx 32rpx;
+  position: relative;
+}
+.comment__service{
+  padding-bottom: 20rpx;
+  margin-bottom:20rpx;
+  border-bottom: 4rpx solid #efefef;
+}
+.img--correct{
+  width: 22rpx;
+  height: 22rpx;
+}
+.comment__service__item{
+  vertical-align: middle;
+  font-size:26rpx;
+  line-height: 45rpx;
+}
+.comment__comment__title{
+  font-size: 30rpx;
+  font-weight: bolder;
+  line-height: 45rpx;
+  margin-bottom: 20rpx;
+}
+.img--more{
+  width: 9rpx;
+  height: 15rpx;
+  line-height: 39rpx;
+  vertical-align: middle;
+}
+.comment__comment{
+  position: relative;
+}
+.comment__comment__total{
+  font-size:26rpx;
+  line-height: 39rpx;
+  color:#888;
+  position: absolute;
+  right: 0;top: 0;
+}
+.comment__comment__item{
+  font-size:26rpx;
+  line-height: 39rpx;
+  color:#888;
+}
+
+/* 操作区域 */
+.operation{
+  font-size: 26rpx;
+  line-height: 78rpx;
+  height: 78rpx;
+  position: fixed;
+  bottom: 0;
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+}
+.operation__btn--add,.operation__btn--buy{
+  width: 100%;
+  text-align: center;
+}
+.operation__btn--add{
+  background: #F6EAA4;
+}
+.operation__btn--buy{
+  background: #F5E06A;
+}

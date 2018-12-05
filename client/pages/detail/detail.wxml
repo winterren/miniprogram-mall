@@ -1,0 +1,33 @@
+<!-- 商品卡片 -->
+<view class="product">
+  <image class="product__img" src='{{product.image}}'></image>
+  <view class="product__name">{{product.name}}</view>
+  <view class="product__place">{{product.source}}</view>
+  <view class="product__price"><span class="ico--money">￥</span>{{product.price}}</view>
+</view>
+<!-- 服务和评价 -->
+<view class="comment">
+  <view class="comment__service">
+    <view class="comment__service__item">
+      <image src="/images/check-yellow.png" class="img--correct"></image>
+      7天免费退货
+    </view>
+    <view class="comment__service__item">
+      <image src="/images/check-yellow.png" class="img--correct"></image>
+      24小时内发货病配送运费险
+    </view>
+  </view>
+  <view class="comment__comment">
+    <view class="comment__comment__title">已买评价</view>
+    <view class="comment__comment__total">
+      1条
+      <image src="/images/grey-arrow.png" class="img--more"></image>
+    </view>
+    <view class="comment__comment__item">"test"</view>
+  </view>
+</view>
+<!-- 操作区域 -->
+<view class="operation">
+  <view class="operation__btn--add">加入购物车</view>
+  <view class="operation__btn--buy">立即购买</view>
+</view>
