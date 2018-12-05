@@ -1,2 +1,11 @@
-<!--pages/user/user.wxml-->
-<text>pages/user/user.wxml</text>
+<!-- bg -->
+<image class="bg" src="/images/bg.png"></image>
+<!-- 用户卡片 -->
+<view class="user-card">
+  <view class="user-card__info">
+    <image class="user-card__info__img"></image>
+    网上商城
+  </view>
+  <view class="user-card__opt">收货地址<image src="/images/grey-arrow.png" class="img--more"></image></view>
+  <view class="user-card__opt">联系客服<image src="/images/grey-arrow.png" class="img--more"></image></view>
+</view>
