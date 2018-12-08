@@ -3,9 +3,11 @@
 <!-- 用户卡片 -->
 <view class="user-card">
   <view class="user-card__info">
-    <image class="user-card__info__img"></image>
-    网上商城
+    <image class="user-card__info__img" src="{{userInfo.avatarUrl}}"></image>
+    {{userInfo.nickName}}
   </view>
   <view class="user-card__opt">收货地址<image src="/images/grey-arrow.png" class="img--more"></image></view>
   <view class="user-card__opt">联系客服<image src="/images/grey-arrow.png" class="img--more"></image></view>
 </view>
+
+<button class="unlogin-btn" open-type="getUserInfo" bindgetuserinfo="onTapLogin">微信登录</button>
